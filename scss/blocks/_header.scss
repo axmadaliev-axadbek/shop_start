@@ -1,0 +1,280 @@
+.header{
+    width: 100%;
+    &__block{
+        display: flex;
+        padding: 24px 0;
+    }
+    &__img{
+        width: 100%;
+        max-width: 686px;
+        height: 878px;
+        position: relative;
+        & img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding-right: 23px;
+    }
+}
+
+.info{
+    margin-left: 36px;
+    &__name{
+        margin-bottom: 8px;
+    }
+    &__id{
+        margin-bottom: 18px;
+        color: $grey;
+    }
+    &__reviews{
+        display: flex;
+        align-items: center;
+        margin-bottom: 46px;
+    }
+    &__price{
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        & span{
+            margin-left: 12px;
+            margin-right: 20px;
+        }
+    }
+    &__sales{
+        display: flex;
+        margin-bottom: 32px;
+    }
+    &__select{
+        margin-bottom: 12px;
+        max-width: 315px;
+        height: 44px;
+        padding: 12px 16px;
+    }
+    &__size{
+        text-decoration-line: underline;
+        color: $bg-dark;
+        margin-bottom: 40px;
+        transition: all 0.3s;
+        &:hover{
+            color: #c71022;
+        }
+        &:active{
+            color: black;
+         }
+    }
+    &__counter{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__basket{
+        display: flex;
+        margin-bottom: 12px;
+        & span{
+            display: flex;
+            border: 1px solid $bg-dark;
+            margin-right: 4px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        &__link{
+            text-decoration: none;
+            color: white;
+            background-color: $bg-dark;
+            padding: 12px 28px;
+            transition: all 0.3s;
+            &:hover{
+                background-color: #fff;
+                color: $bg-dark;
+            }
+            &:active{
+                color: white;
+                background-color: $bg-dark;
+            }
+        }
+        &__like{
+            padding: 14px;
+            background-color: $bg-dark;
+            color: white;
+            transition: all 0.3s;
+            &:hover{
+                background-color: #fff;
+                color: $bg-dark;
+            }
+            &:active{
+                color: white;
+                background-color: $bg-dark;
+            }
+        }
+    }
+    &__buy{
+        color: $bg-dark;
+        margin-bottom: 29px;
+        transition: all 0.3s;
+        &:hover{
+            color: #c71022;
+        }
+        &:active{
+            color: black;
+         }
+    }
+    &__links{
+        position: relative;
+        padding-left: 22px;
+        color: $bg-dark;
+        margin-top: 12px;
+        line-height: 14px;
+        transition: all 0.3s;
+        &:hover{
+            color: #c71022;
+        }
+        &:active{
+            color: black;
+         }
+        &:first-child{
+            margin-top: 24px;
+        }
+    }
+}
+
+.review{
+    margin-right: 13px;
+    &__stars{
+        height: 20px;
+        margin-right: 5px;
+    }
+    &___num{
+        height: 15px;
+    }
+    &__num a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $bg-dark;
+        line-height: 15px;
+        & span{
+            margin-right: 8px;
+        }
+    }
+}
+.sale__btn{
+    width: 91px;
+    height: 24px;
+    border: 1px solid $bg-dark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 9px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.counter{
+    display: flex;
+    max-height: 48px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    & button{
+        width: 48.3px;
+        height: 48px;
+        border: none;
+        background-color: #F2F2F2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            background-color: rgb(163, 163, 163);
+        }
+        &:active{
+            color: white;
+            background-color: #c71022;
+        }
+    }
+    & span{
+        width: 48px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F2F2F2;
+    }
+}
+
+.desc::before, .del::before, .buy::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.desc::before{
+    background-image: url(../img/icon1.svg);
+}
+.del::before{
+    background-image: url(../img/icon2.svg);
+}
+.buy::before{
+    background-image: url(../img/icon3.svg);
+}
+
+.column__img{
+    display: flex;
+    flex-direction: column;
+}
+
+.column__img{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.next__img{
+    margin-bottom: 7px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1156px) {
+    .info__basket__link{
+        padding: 12px;
+     }
+}
+@media (max-width: 880px) {
+    .header__block{
+        flex-wrap: wrap;
+    }
+    .header__info{
+        margin-top: 24px;
+        margin-left: 20px;
+    }
+    .header__img{
+        max-width: 100%;
+        height: 480px;
+    }
+    .next__img{
+        width: 56px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 440px) {
+    .next__img{
+        width: 40px;
+        height: 52px;
+    }
+    .header__block{
+        padding-top: 0;
+    }
+}

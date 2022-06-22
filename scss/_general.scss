@@ -1,0 +1,68 @@
+html{
+    box-sizing: border-box;
+}
+
+*, 
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0;
+    line-height: 20px;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    font-family: 'Open Sans';
+    color: rgba(51, 51, 51, 1);
+    background-color: white;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+}
+
+img{
+    // display: inline-block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+h4{
+    font-size: 16px;
+    line-height: 24px;
+}
+.price{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}
+.old__price{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    text-decoration-line: line-through;
+    color: $grey;
+}
+.small_text{
+    font-size: 12px;
+    line-height: 16px;
+}
+
+

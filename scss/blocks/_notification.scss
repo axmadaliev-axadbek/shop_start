@@ -1,0 +1,46 @@
+.notification{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    &__message{
+        width: 500px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 0 10px white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        padding: 20px;
+    }
+    &__text{
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    &__btn{
+        width: 80px;
+        height: 30px;
+        margin-top: 20px;
+        color: white;
+        border: 1px solid $bg-dark;
+        background-color: $bg-dark;
+        transition: all 0.3s;
+        &:hover{
+            color: $bg-dark;
+            background-color: #fff;
+        }
+        &:active{
+            color: white;
+            background-color: $bg-dark;
+        }
+    }
+}
